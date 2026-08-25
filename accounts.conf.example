@@ -1,0 +1,17 @@
+# Configuracion multi-cuenta para scripts/farm_all.sh
+# Formato:  <nombre-cuenta>  [proxy_http_opcional]
+#
+# El proxy es OBLIGATORIO si quieres IPs distintas por cuenta.
+# Formato proxy: http://user:pass@host:port  (o http://host:port sin auth)
+#
+# Ejemplos:
+#   cuenta01
+#   cuenta02   http://usuario:password@proxy-residencial:8080
+#   cuenta03   http://otro-usuario:password@proxy2:3128
+#
+# Con varias cuentas SIN proxy compartiran tu IP de casa -> correlacion
+# inmediata. Usa proxy residencial sticky por cuenta.
+
+cuenta01
+# cuenta02   http://user:pass@proxy.example.com:8080
+# cuenta03   http://user:pass@proxy2.example.com:8080

@@ -3,4 +3,9 @@
 !nouns.txt
 Todo.md
 data-dir/
+data-*/
+logs/
+.venv/
+accounts.conf
+*.log
 __pycache__/

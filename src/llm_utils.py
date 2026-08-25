@@ -31,7 +31,7 @@ DEFAULT_USER_PROMPT_FOR_SEARCH_POINTS_WITHOUT_DESC = """Generate the first searc
 
 USER_PROMPT_FOR_SEARCH_QUERY_CONTINUATION = """Generate the next search query."""
 
-def get_ollama_response(messages: list[dict[str, str]], model: str="gemma4:cloud") -> str:
+def get_ollama_response(messages: list[dict[str, str]], model: str="gemma3:4b") -> str:
 	response = ollama.chat(
 		model=model,
 		messages=messages
